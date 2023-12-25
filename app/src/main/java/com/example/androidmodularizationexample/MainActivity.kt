@@ -5,9 +5,13 @@ import android.os.Bundle
 import android.widget.Button
 import com.archax.lib.navigation.IFeatureUserNavigation
 import com.example.androidmodularizationexample.navigator.FeatureUserNavigationImp
+import dagger.hilt.android.AndroidEntryPoint
+import javax.inject.Inject
 
+@AndroidEntryPoint
 class MainActivity :AppCompatActivity() {
 
+    @Inject
     private lateinit var navigator: IFeatureUserNavigation
 
 
@@ -15,7 +19,6 @@ class MainActivity :AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        navigator = FeatureUserNavigationImp()
         setContentView(R.layout.activity_main)
         setOnClickListener()
     }
