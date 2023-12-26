@@ -16,4 +16,5 @@ dependencyResolutionManagement {
 rootProject.name = "AndroidModularizationExample"
 include(":app")
 include(":feature:user")
+include(":feature:guest")
 include(":lib:navigation")

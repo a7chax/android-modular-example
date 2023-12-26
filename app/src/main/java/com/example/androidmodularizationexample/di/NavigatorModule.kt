@@ -1,7 +1,7 @@
 package com.example.androidmodularizationexample.di
 
-import com.archax.lib.navigation.IFeatureUserNavigation
-import com.example.androidmodularizationexample.navigator.FeatureUserNavigationImp
+import com.archax.lib.navigation.*
+import com.example.androidmodularizationexample.navigator.*
 import dagger.*
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
@@ -13,5 +13,10 @@ class NavigatorModule {
     @Provides
     fun provideFeatureUserNavigation(): IFeatureUserNavigation {
         return FeatureUserNavigationImp()
+    }
+
+    @Provides
+    fun provideFeatureGuestNavigation(): IFeatureGuestNavigation {
+        return FeatureGuestNavigationImp()
     }
 }

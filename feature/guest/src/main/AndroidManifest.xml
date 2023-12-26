@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.archax.guest">
+
+  <application>
+    <activity
+      android:name=".GuestActivity"
+      android:screenOrientation="portrait"
+      android:exported="false"/>
+
+  </application>
+</manifest>
